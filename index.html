@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='index.js'></script>
+</head>
+<body class="body">
+    <div class="image">
+        <img id="logoimg"src="Images/bgheader.jpg" alt="bgimage">
+       <div>
+        <nav class="topNav">
+            <div class="logo"> <img id='logo' src="Images/logo.svg" alt="logo">
+                <span>Weather</span>
+             </div>
+            <ul id="topNav">
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Air Quality</a></li>
+                <li><a href="#">Humidity</a></li>
+                <li><a href="#">Temperature</a></li>
+                
+            </ul>
+        </nav>
+
+       </div>
+       <input type="text" id="locationInput" placeholder="Enter location">
+       <button id="fetchButton" onclick="getweather()" >Fetch Weather</button>
+
+    </div>
+    
+   
+    <div class="weatherdatacards">
+        <div class="weatherdata1" id="imageElement1" style ="" >
+            <div class="p"><span id="fetchedlocation1">Your desired Location</span>
+           
+           
+            </div>
+                <div id="fetchdata1">
+                 </div>
+                 <img id="iconChange1"  src="" >
+        </div>
+        <div class="weatherdata2" id="imageElement2" style =""  >
+            
+            <div class="p"><span id="fetchedlocation2">Your desired Location</span>
+           
+           
+        </div>
+            <div id="fetchdata2">
+             </div>
+             <img id="iconChange2"  src="" >
+           
+        </div>
+        
+        <div class="weatherdata3" id="imageElement3" style ="" >
+            <div class="p"><span id="fetchedlocation3">Your desired Location</span>
+           
+           
+            </div>
+                <div id="fetchdata3">
+                 </div>
+                 <img id="iconChange3"  src="" ></div>
+        
+    </div>
+   
+    
+</body>
+</html>
